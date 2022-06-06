@@ -148,15 +148,6 @@ export default class ToDoList {
     this.store();
   }
 
-  // check(idx, completed) {
-  //   const index = this.items.findIndex(({ index }) => index === idx);
-
-  //   this.items[index].completed = completed;
-  //   this.render();
-  //   this.initListeners(true);
-  //   this.store();
-  // }
-
   store() {
     const data = JSON.stringify(this.items);
     localStorage.setItem(this.STORE_KEY, data);
